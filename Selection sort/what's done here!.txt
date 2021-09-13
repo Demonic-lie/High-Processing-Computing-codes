@@ -1,0 +1,7 @@
+In selection sort there are two loops.
+The outer loop cannot be parallelized as each loop cycle depends on previous loop cycle.
+The inner loop is parallelized. So in each cycle- storing maximum value and index,
+and then comparing maximum value so obtained to get highest value from unsorted part of array.
+For this  parallel reduction directive of openMP is customized.
+
+At end of inner for loop , index of maximum element is obtained and then it's swapped.
